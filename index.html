@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background-image: linear-gradient(
+        to right,
+        black,
+        black 38%,
+        orange 28%,
+        orange 100%
+      );
+    }
+    header {
+      padding: 1px;
+      margin-left: 506px;
+      font-size: 35px;
+      color: white;
+      margin-bottom: 20px;
+    }
+    nav {
+      float: left;
+      width: 39%;
+      height: 410px;
+      padding-right: 20px;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    article {
+      float: left;
+      padding: 49px;
+      width: 61%;
+      height: 550px;
+      background-color: rgba(29, 29, 29, 0.651);
+      border-radius: 5%;
+    }
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media (max-width: 600px) {
+      nav,
+      article, nav ul {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .profile_image {
+      width: 560px;
+      height: 400px;
+      object-fit: cover;
+      border-style: solid;
+      border-color: orange;
+      border-width: 1px;
+      border-radius: px;
+    }
+    .Name {
+      vertical-align: top;
+      margin-left: 180px;
+      font-size: 55px;
+      width: 250px;
+      font-style: oblique;
+      font-family: "Lucida Sans Unicode";
+      color: rgb(255, 255, 255);
+      transition: color 0.3s;
+    }
+    .Name:hover {
+      color: orange;
+    }
+    .bisu_student {
+      font-size: 20px;
+      font-family: impact;
+      color: white;
+      margin-left: 170px;
+      line-height: 10px;
+      transition: color 0.3s;
+    }
+    .bisu_student:hover {
+      color: orange;
+    }
+    .email {
+      background-color: rgb(0, 177, 200);
+      color: white;
+      border-radius: 4px;
+      border: none;
+      padding: 20px;
+      cursor: pointer;
+      margin-left: 270px;
+      transition: opacity 0.15s;
+      vertical-align: bottom;
+      margin-top: 150px;
+      font-size: 25px;
+      margin-bottom: 20px;
+      transition: opacity 0.2s;
+    }
+    .email:hover {
+      opacity: 0.8;
+    }
+    .email:active {
+      opacity: 0.5;
+    }
+    .about_me {
+      font-size: 50px;
+      color: white;
+      margin-top: 10px;
+      transition: color 0.3s;
+    }
+    .about_me:hover {
+      color: rgb(0, 0, 0);
+    }
+    p {
+      color: white;
+      font-size: 30px;
+      font-family: "Courier New", Courier, monospace;
+      transition: color 0.3s;
+    }
+    p:hover {
+      color: rgb(0, 0, 0);
+    }
+    pre {
+      color: white;
+      font-size: 30px;
+      font-family: "Courier New", Courier, monospace;
+      transition: color 0.3s;
+    }
+    pre:hover {
+      color: rgb(0, 0, 0);
+    }
+    .facebook_logo {
+      vertical-align: bottom;
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      margin-left: 400px;
+      margin-top: 350px;
+      transition: opacity 0.2s;
+      margin-bottom: 10px;
+    }
+    .facebook_logo:hover {
+      width: 80px;
+      height: 80px;
+      opacity: 0.8;
+    }
+    .facebook_logo:active {
+      opacity: 0.5;
+    }
+    .instagram_logo {
+      vertical-align: bottom;
+      width: 68px;
+      height: 68px;
+      object-fit: cover;
+      margin-left: 40px;
+      transition: opacity 0.2s;
+      margin-bottom: 10px;
+    }
+    .instagram_logo:hover {
+      width: 73px;
+      height: 73px;
+      opacity: 0.8;
+    }
+    .instagram_logo:active {
+      opacity: 0.5;
+    }
+    .youtube_logo {
+      vertical-align: bottom;
+      width: 75px;
+      height: 75px;
+      object-fit: cover;
+      margin-left: 40px;
+      transition: opacity 0.2s;
+      margin-bottom: 10px;
+    }
+    .youtube_logo:hover {
+      width: 80px;
+      height: 80px;
+      opacity: 0.8;
+    }
+    .youtube_logo:active {
+      opacity: 0.5;
+    }
+
+    .twitter_logo {
+      vertical-align: bottom;
+      width: 68px;
+      height: 68px;
+      object-fit: cover;
+      margin-left: 40px;
+      margin-bottom: 10px;
+      transition: opacity 0.2s;
+    }
+    .twitter_logo:hover {
+      width: 73px;
+      height: 73px;
+      opacity: 0.8;
+    }
+    .twitter_logo:active {
+      opacity: 0.5;
+    }
+  </style>
+
+  <body>
+    <header><h1>SOLO PLAYS</h1></header>
+    <section>
+      <nav>
+        <ul>
+          <img
+            class="profile_image"
+            src="images/Jai.jpg"
+            alt="Jai Gelle Profile"
+          />
+          <h1 class="Name">Jai Gelle J. Aaron</h1>
+          <p class="bisu_student">BISU Clarin Student</p>
+          <a href="mailto:jaigelle.aaron@gmail.com"
+            ><button class="email">EMAIL ME</button></a
+          >
+        </ul>
+      </nav>
+      <article>
+        <h2 class="about_me">About me</h2>
+        <p>
+          I am a 3rd Year BSCS student of BISU Clarin. This is my first time
+          making a webpage. And below is my details:
+        </p>
+        <pre>
+Name: Jai Gelle Aaron.            
+Id: Number
+Nick Name: Jai            
+Address: Pob.Centro, Clarin, Bohol
+Birthday: Feb. 6, 2002
+Contact Number: 0942458345
+Hobbies: Fishing
+        </pre>
+        <a href="https://www.facebook.com/jaigelle.aaron" target="_blank"
+          ><img class="facebook_logo" src="images/facebook.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img class="instagram_logo" src="images/instagram.png" alt=""
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img class="youtube_logo" src="images/youtube.png" alt=""
+        /></a>
+        <a href="https://www.twitter.com/" target="_blank"
+          ><img class="twitter_logo" src="images/twitter.png" alt=""
+        /></a>
+      </article>
+    </section>
+  </body>
+</html>
