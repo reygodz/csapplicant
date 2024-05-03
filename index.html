@@ -1,259 +1,282 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      background-image: linear-gradient(
-        to right,
-        black,
-        black 38%,
-        orange 28%,
-        orange 100%
-      );
-    }
-    header {
-      padding: 1px;
-      margin-left: 506px;
-      font-size: 35px;
-      color: white;
-      margin-bottom: 20px;
-    }
-    nav {
-      float: left;
-      width: 39%;
-      height: 410px;
-      padding-right: 20px;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    article {
-      float: left;
-      padding: 49px;
-      width: 61%;
-      height: 550px;
-      background-color: rgba(29, 29, 29, 0.651);
-      border-radius: 5%;
-    }
-    section::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    @media (max-width: 600px) {
-      nav,
-      article, nav ul {
-        width: 100%;
-        height: auto;
-      }
-    }
-    .profile_image {
-      width: 560px;
-      height: 400px;
-      object-fit: cover;
-      border-style: solid;
-      border-color: orange;
-      border-width: 1px;
-      border-radius: px;
-    }
-    .Name {
-      vertical-align: top;
-      margin-left: 180px;
-      font-size: 55px;
-      width: 250px;
-      font-style: oblique;
-      font-family: "Lucida Sans Unicode";
-      color: rgb(255, 255, 255);
-      transition: color 0.3s;
-    }
-    .Name:hover {
-      color: orange;
-    }
-    .bisu_student {
-      font-size: 20px;
-      font-family: impact;
-      color: white;
-      margin-left: 170px;
-      line-height: 10px;
-      transition: color 0.3s;
-    }
-    .bisu_student:hover {
-      color: orange;
-    }
-    .email {
-      background-color: rgb(0, 177, 200);
-      color: white;
-      border-radius: 4px;
-      border: none;
-      padding: 20px;
-      cursor: pointer;
-      margin-left: 270px;
-      transition: opacity 0.15s;
-      vertical-align: bottom;
-      margin-top: 150px;
-      font-size: 25px;
-      margin-bottom: 20px;
-      transition: opacity 0.2s;
-    }
-    .email:hover {
-      opacity: 0.8;
-    }
-    .email:active {
-      opacity: 0.5;
-    }
-    .about_me {
-      font-size: 50px;
-      color: white;
-      margin-top: 10px;
-      transition: color 0.3s;
-    }
-    .about_me:hover {
-      color: rgb(0, 0, 0);
-    }
-    p {
-      color: white;
-      font-size: 30px;
-      font-family: "Courier New", Courier, monospace;
-      transition: color 0.3s;
-    }
-    p:hover {
-      color: rgb(0, 0, 0);
-    }
-    pre {
-      color: white;
-      font-size: 30px;
-      font-family: "Courier New", Courier, monospace;
-      transition: color 0.3s;
-    }
-    pre:hover {
-      color: rgb(0, 0, 0);
-    }
-    .facebook_logo {
-      vertical-align: bottom;
-      width: 75px;
-      height: 75px;
-      object-fit: cover;
-      margin-left: 400px;
-      margin-top: 350px;
-      transition: opacity 0.2s;
-      margin-bottom: 10px;
-    }
-    .facebook_logo:hover {
-      width: 80px;
-      height: 80px;
-      opacity: 0.8;
-    }
-    .facebook_logo:active {
-      opacity: 0.5;
-    }
-    .instagram_logo {
-      vertical-align: bottom;
-      width: 68px;
-      height: 68px;
-      object-fit: cover;
-      margin-left: 40px;
-      transition: opacity 0.2s;
-      margin-bottom: 10px;
-    }
-    .instagram_logo:hover {
-      width: 73px;
-      height: 73px;
-      opacity: 0.8;
-    }
-    .instagram_logo:active {
-      opacity: 0.5;
-    }
-    .youtube_logo {
-      vertical-align: bottom;
-      width: 75px;
-      height: 75px;
-      object-fit: cover;
-      margin-left: 40px;
-      transition: opacity 0.2s;
-      margin-bottom: 10px;
-    }
-    .youtube_logo:hover {
-      width: 80px;
-      height: 80px;
-      opacity: 0.8;
-    }
-    .youtube_logo:active {
-      opacity: 0.5;
-    }
+<html>
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .logo {
+            font-size: 90px;
+            color: #800000;
+        }
+        .sub-title {
+            margin-bottom: 20px;
+            font-size: 40px;
+            color: #ffc400;
+        }
+        .search-bar {
+            width: 90%; /* Adjusted for smaller screens */
+            
+            height: 50px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .search-buttons {
+            margin-top: 20px;
+        }
+        .search-button {
+            height: 36px;
+            margin: 0 6px;
+            padding: 0 30px;
+            background-color: #28a745;
+            border: 1px solid #a1a2a3;
+            color: #fff;
+            font-size: 24px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px; /* Limiting the maximum width */
+            text-align: center; /* Centering the content */
+        }
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    .twitter_logo {
-      vertical-align: bottom;
-      width: 68px;
-      height: 68px;
-      object-fit: cover;
-      margin-left: 40px;
-      margin-bottom: 10px;
-      transition: opacity 0.2s;
-    }
-    .twitter_logo:hover {
-      width: 73px;
-      height: 73px;
-      opacity: 0.8;
-    }
-    .twitter_logo:active {
-      opacity: 0.5;
-    }
-  </style>
+        /* Media query for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .search-bar {
+                width: 80%; /* Adjusted width */
+            }
+            .search-buttons {
+                flex-direction: column; /* Stack buttons vertically */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">BSCS Applicant</div>
+        <div class="sub-title">Verify your admission status</div>
+        <input type="text" class="search-bar" placeholder="Lastname" name="lastname" id="lastname">
+        <input type="text" class="search-bar" placeholder="First name" name="firstname" id="firstname">
+        <div class="search-buttons">
+            <button class="search-button" id="searchStatusBtn">Search Status</button>
+            <a href="https://www.facebook.com/bisuclarincs"><button class="search-button">BSCS FB Page</button></a>
+        </div>
+    </div>
 
-  <body>
-    <header><h1>SOLO PLAYS</h1></header>
-    <section>
-      <nav>
-        <ul>
-          <img
-            class="profile_image"
-            src="images/Jai.jpg"
-            alt="Jai Gelle Profile"
-          />
-          <h1 class="Name">Jai Gelle J. Aaron</h1>
-          <p class="bisu_student">BISU Clarin Student</p>
-          <a href="mailto:jaigelle.aaron@gmail.com"
-            ><button class="email">EMAIL ME</button></a
-          >
-        </ul>
-      </nav>
-      <article>
-        <h2 class="about_me">About me</h2>
-        <p>
-          I am a 3rd Year BSCS student of BISU Clarin. This is my first time
-          making a webpage. And below is my details:
-        </p>
-        <pre>
-Name: Jai Gelle Aaron.            
-Id: Number
-Nick Name: Jai            
-Address: Pob.Centro, Clarin, Bohol
-Birthday: Feb. 6, 2002
-Contact Number: 0942458345
-Hobbies: Fishing
-        </pre>
-        <a href="https://www.facebook.com/jaigelle.aaron" target="_blank"
-          ><img class="facebook_logo" src="images/facebook.png" alt=""
-        /></a>
-        <a href="https://www.instagram.com/" target="_blank"
-          ><img class="instagram_logo" src="images/instagram.png" alt=""
-        /></a>
-        <a href="https://www.youtube.com/" target="_blank"
-          ><img class="youtube_logo" src="images/youtube.png" alt=""
-        /></a>
-        <a href="https://www.twitter.com/" target="_blank"
-          ><img class="twitter_logo" src="images/twitter.png" alt=""
-        /></a>
-      </article>
-    </section>
-  </body>
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 name="greeting" id="greeting">Congratulations</h1>
+            <img name="imageStatus" id="imageStatus" src="https://cdn-icons-png.freepik.com/256/7626/7626666.png?semt=ais_hybrid" width="200" height="200" alt="Description of the image">
+            <h2 name="status" id="status">Status</h2>
+        </div>
+    </div>
+
+    <script>
+        // Dictionary of applicant names and their statuses
+        var applicantStatus = {
+            "ALBISO, LIECIL AMOR":"Backout",
+            "LAJERA, MANILYN":"Backout",
+            "PATALINGHUG, MHARRY GRACE":"Backout",
+            "PATINDOL, CHRISTIAN JAY":"Backout",
+            "SALERA, ANNA LEAH":"Backout",
+            "TORREJANO, MIRASOL":"Backout",
+            "YBAÑEZ, KIERSTEIN":"Backout",
+            "ABJELINA, VJ":"Confirm",
+            "ABOLOC, CHAD AARON":"Confirm",
+            "AÑASCO, CHRISCEL ANN":"Confirm",
+            "ARCAYOS, JILLIAN MAE":"Confirm",
+            "ARNAIZ, ERICA JANE":"Confirm",
+            "ASIS, JAMES DAN REV":"Confirm",
+            "AUGUIS, GLADYS MAE":"Confirm",
+            "AYCO, ROZEN ANNE":"Confirm",
+            "BADILLA, JUSTINE IAN":"Confirm",
+            "BASIO, KRISHA MAE":"Confirm",
+            "BAUTISTA, JABEZ":"Confirm",
+            "BELECINA, JANNA REY":"Confirm",
+            "BESINA, CHRISTINE":"Confirm",
+            "BETINOL, ANGELA":"Confirm",
+            "BOLASTIG, JOSHUA":"Confirm",
+            "BUSALANAN, MARY TIFFANY":"Confirm",
+            "CABASE, MARK KENNETH":"Confirm",
+            "CABIARA, JEIMARLYN":"Confirm",
+            "CABRILLOS, JASPHER":"Confirm",
+            "CAÑASTRA, JOHN LORD":"Confirm",
+            "CAÑASTRA, JUN MARK":"Confirm",
+            "CAÑETE, MARY JEROSE":"Confirm",
+            "CAÑO, JOVELL GRACE":"Confirm",
+            "CARCALLAS, CHARLES":"Confirm",
+            "CIMAGALA, JOXARA FAITH":"Confirm",
+            "DEGAMO, JAMES KYLE":"Confirm",
+            "DELATORRE, LLOYD IAN":"Confirm",
+            "DELOY, JAMES LORENCE":"Confirm",
+            "DIAGBIL, MICHAEL RYAN":"Confirm",
+            "DOYDOY, APRIL MAE":"Confirm",
+            "ENAD, HILARY JOYCE":"Confirm",
+            "ESTOSE, JOSEPH":"Confirm",
+            "ESTOSE, RHEA JADE":"Confirm",
+            "GERONA, MARINEL":"Confirm",
+            "GULA, EMILY":"Confirm",
+            "HUIT, RON WINSTON":"Confirm",
+            "JAGANAS, HERO":"Confirm",
+            "JUMAMOY, ROY":"Confirm",
+            "LACBAYO, LOUIE JAY / ALMA":"Confirm",
+            "LAMOSTE, HANNAH":"Confirm",
+            "LAPIZ, ANGELA MAE":"Confirm",
+            "LAPIZ, APPLE MAE":"Confirm",
+            "LOMOYA, JOHNREAL":"Confirm",
+            "MABILOG, RAZIEL ELEIZAR":"Confirm",
+            "MANAGAYTAY, MARYJOY":"Confirm",
+            "MEJIAS, CRISDAN":"Confirm",
+            "MELAR, ANGELA":"Confirm",
+            "MELENCION, ANNA JAE":"Confirm",
+            "MIANO, KEVIN MACLHEIN":"Confirm",
+            "MIGUE, KYVER":"Confirm",
+            "MINDORO, KARYLLE":"Confirm",
+            "MORALES, SYNGEL":"Confirm",
+            "MULOS, GHERSAM":"Confirm",
+            "NAYVE, MAEVEL":"Confirm",
+            "OÑES, CIARA YTTEL LOURAH":"Confirm",
+            "OPELINIA, FLYNNE EJ":"Confirm",
+            "ORAPA, AIRAH":"Confirm",
+            "ORAPA, DONALYN":"Confirm",
+            "OSIO, MARK DANIEL":"Confirm",
+            "PAMULAGAN, CLOUIE":"Confirm",
+            "PARDILLO, IRICH":"Confirm",
+            "PASCO, JOSHUA KIRBY":"Confirm",
+            "PATAYAN, KRITCHEL ANN":"Confirm",
+            "POJAS, FRANCIS JOHN":"Confirm",
+            "RABOR, JUNT MATTEO":"Confirm",
+            "REYES, AUXYNE RYO":"Confirm",
+            "RULIDA, JOSEPHINE":"Confirm",
+            "SALERA, TIA JANE":"Confirm",
+            "SAPUNGAY, JOEVER":"Confirm",
+            "SIOCO, SHAIRYLLE":"Confirm",
+            "SORISO, ARNEL JOHN":"Confirm",
+            "TALAUGON, MARY JEAN":"Confirm",
+            "TAPIC, JADE MARION":"Confirm",
+            "TEMBLOR, HANNAH LIZA":"Confirm",
+            "TEMBLOR, HANNAH LEA":"Confirm",
+            "TORREJOS, JOSEPH KEVIN":"Confirm",
+            "TORREON, NORMALITA":"Confirm",
+            "TORREON, JESSA MAE":"Confirm",
+            "TUNGA, JAMELLA TRISHIA":"Confirm",
+            "TURAYA, JUNESSA":"Confirm",
+            "VILLARIN, ABEGAIL":"Confirm",
+            "VILLAVER, ANAVILLA":"Confirm",
+            "VISTAL, JOBERT":"Confirm",
+            "VITOR, JERUZ":"Confirm",
+            "LOFRANCO, MARVEN":"None",
+            "NABAJA, ANGELECA":"None",
+            "NOMIO, JOHN WILMER":"None",
+            "OSIO, ALBERT":"None",
+            "SANIEL, RUSSELL":"None",
+            "SAUSA, RAMIEL":"None",
+            "TAMPON, JUNLEONARD":"None",
+            "TANGARO, LOVELY BLESS":"None",
+            "TECSON, MARC JHAY":"None"
+
+        };
+
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("searchStatusBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal if the applicant is found
+        btn.onclick = function() {
+            var lname = document.getElementById("lastname").value.trim().toUpperCase();
+            var fname = document.getElementById("firstname").value.trim().toUpperCase();
+            if (lname == null || lname == undefined || lname.trim() == "") return;
+            if (fname == null || fname == undefined || fname.trim() == "") return;
+            
+            var fullname = lname +", "+fname
+            if (applicantStatus.hasOwnProperty(fullname)) {
+                if(applicantStatus[fullname] == "Confirm"){
+                    modal.style.display = "block";
+                    document.getElementById("greeting").innerText = "Congratulation \n" + fullname;
+                    document.getElementById("status").innerText = "Your application has been confirmed. You are now a step closer to becoming a BISUan.";
+                    document.getElementById("imageStatus").src = "https://media0.giphy.com/media/dpiPxGtyjRSuNY1zwU/giphy.gif?cid=6c09b9527p7gcfjuw5cbaptlb7pe3zglof409ok0qlp8ehuc&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s";
+                }else if(applicantStatus[fullname] == "Backout"){
+                    modal.style.display = "block";
+                    document.getElementById("greeting").innerText = "Whhhyyyy!!! \n" + fullname.toUpperCase();
+                    document.getElementById("status").innerText = "It seems that you withdrew your application at the preliminary stage.";
+                    document.getElementById("imageStatus").src = "https://media2.giphy.com/media/TpsuCxwsNH8gatbpR5/200w.gif?cid=6c09b952hv5qu4b2giwsyu9mw5w5uhoeouu1hd3ej4oqawf0&ep=v1_gifs_search&rid=200w.gif&ct=g";
+                }else if(applicantStatus[fullname] == "None"){
+                    modal.style.display = "block";
+                    document.getElementById("greeting").innerText = "Sorry \n" + fullname.toUpperCase();
+                    document.getElementById("status").innerText = "We haven't received your response regarding your confirmation or withdrawal.";
+                    document.getElementById("imageStatus").src = "https://i.pinimg.com/originals/57/04/68/570468282d5ce15d740106535b61f533.gif";
+                }
+                
+            } else {
+                modal.style.display = "block";
+                document.getElementById("greeting").innerText = "Sorry! \n" + fullname.toUpperCase();
+                document.getElementById("status").innerText = "It seems that you are not an applicant in our department.";
+                document.getElementById("imageStatus").src = "https://media3.giphy.com/media/4zgnPjvlO7gfE3VI4y/giphy.gif";
+            }
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
 </html>
