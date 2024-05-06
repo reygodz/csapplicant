@@ -45,7 +45,7 @@ var applicantStatus = {
     "HUIT, RON WINSTON":"Confirm",
     "JAGANAS, HERO":"Confirm",
     "JUMAMOY, ROY":"Confirm",
-    "LACBAYO, LOUIE JAY / ALMA":"Confirm",
+    "LACBAYO, LOUIE JAY":"Confirm",
     "LAMOSTE, HANNAH":"Confirm",
     "LAPIZ, ANGELA MAE":"Confirm",
     "LAPIZ, APPLE MAE":"Confirm",
